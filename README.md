@@ -1,15 +1,15 @@
 # Atmos Cast
 
-A polished, mobile-first weather dashboard built with Next.js, TypeScript, Tailwind CSS, and Open-Meteo. The app is inspired by the elegance and information density of modern native weather apps while using original code, layout, and styling.
+A polished, mobile-first weather dashboard built with Next.js, TypeScript, Tailwind CSS, and Open-Meteo. Atmos Cast is inspired by the elegance and information density of modern native weather apps, while using original code, layout, and styling.
 
 ## Features
 
 - City search powered by the Open-Meteo Geocoding API
 - Current weather hero with temperature, condition, and daily high/low
 - Horizontally scrollable hourly forecast for the next 24 hours
-- 10-day forecast with min/max temperature ranges and conditions
+- 10-day forecast with min/max temperature ranges and condition indicators
 - Detail cards for humidity, wind, feels like, precipitation, sunrise/sunset, and UV index
-- Responsive glass-style interface with dynamic weather-aware backgrounds
+- Responsive glass-style interface with weather-aware gradient backgrounds
 - Loading, empty, and friendly error states
 
 ## Tech Stack
@@ -22,35 +22,38 @@ A polished, mobile-first weather dashboard built with Next.js, TypeScript, Tailw
 
 ## Getting Started
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
-```
 
-Start the development server:
+Start the development server
 
-```bash
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open http://localhost:3000 in your browser.
 
-Build for production:
+If port 3000 is already in use:
 
-```bash
+npm run dev -- -p 3002
+
+Build for production
+
 npm run build
-```
 
-## APIs Used
+APIs Used
 
-- [Open-Meteo Forecast API](https://open-meteo.com/en/docs)
-- [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
+• Open-Meteo Forecast API (https://open-meteo.com/en/docs)
+• Open-Meteo Geocoding API (https://open-meteo.com/en/docs/geocoding-api)
 
-## Future Improvements
+Why I Built This
 
-- Save recent city searches locally
-- Add automatic location detection with browser permission
-- Add unit switching between Celsius and Fahrenheit
-- Include air quality and severe weather alerts where available
-- Add subtle animated weather backgrounds
+I built Atmos Cast as a portfolio project to practice building polished front-end products with real API integrations, responsive layouts, and clean component-based architecture.
+
+Future Improvements
+
+• Save recent city searches locally
+• Add automatic location detection with browser permission
+• Add unit switching between Celsius and Fahrenheit
+• Include air quality and severe weather alerts where available
+• Add subtle animated weather backgrounds
